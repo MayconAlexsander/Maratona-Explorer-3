@@ -24,9 +24,14 @@
     --texts-color: #2D2C2A; /* default: #2D2C2A */
     --desc-color: rgba(0, 0, 0, 0.6); /* default: rgba(0, 0, 0, 0.6) */
 
+    --bubble-1-color: #F25D30; /* Default: #4FC3DC */
+    --bubble-1-color-aura: #F25D3044; /* Default: #4FC3DC44 */
+    --bubble-2-color: #48C1F7; /* Default: #FF2D75 */
+    --bubble-2-color-aura: #48C1F744; /* Default: #FF2D7544 */
 }
 
 body {
+    min-height: 100vh;
     background-color: var(--bg-color);
     font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;
@@ -49,6 +54,49 @@ h1, h2, h3, .price {
 header, section {
     max-width: 30rem;
     margin: 0 auto;
+}
+
+
+
+/* ===== BACKGROUND =============== */
+.background {
+    position: fixed;
+    z-index: -100;
+    /* width: 100%; */
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bubbles {
+    position: relative;
+    display: flex;
+}
+
+.bubbles span {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    background: var(--bubble-1-color);
+    margin: 0 0.4rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1rem var(--bubble-1-color-aura), 0 0 5rem var(--bubble-1-color), 0 0 10rem var(--bubble-1-color);
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+
+.bubbles span:nth-child(even) {
+    background: var(--bubble-2-color);
+    box-shadow: 0 0 0 1rem var(--bubble-2-color-aura), 0 0 5rem var(--bubble-2-color), 0 0 10rem var(--bubble-2-color);
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(100vh) scale(0);
+    }
+
+    100% {
+        transform: translateY(-10vh) scale(1);
+    }
 }
 
 
