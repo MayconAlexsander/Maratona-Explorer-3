@@ -23,11 +23,11 @@
     --titles-bg-color: #FED7AA; /* default: #FED7AA */
     --texts-color: #2D2C2A; /* default: #2D2C2A */
     --desc-color: rgba(0, 0, 0, 0.6); /* default: rgba(0, 0, 0, 0.6) */
-
-    --bubble-1-color: #F25D30; /* Default: #4FC3DC */
-    --bubble-1-color-aura: #F25D3044; /* Default: #4FC3DC44 */
-    --bubble-2-color: #48C1F7; /* Default: #FF2D75 */
-    --bubble-2-color-aura: #48C1F744; /* Default: #FF2D7544 */
+    
+    --bubble-1-color: #995000; /* Default: #F25D30 */
+    --bubble-1-color-aura: #99500044; /* Default: #F25D3044 */
+    --bubble-2-color: #FED7AA; /* Default: #48C1F7 */
+    --bubble-2-color-aura: #FED7AA44; /* Default: #48C1F744 */
 }
 
 body {
@@ -51,7 +51,7 @@ h1, h2, h3, .price {
     text-transform: uppercase;
 }
 
-header, section {
+header, section, footer {
     max-width: 30rem;
     margin: 0 auto;
 }
@@ -100,6 +100,17 @@ header, section {
 }
 
 
+
+/* ===== CONTAINER =============== */
+.container {
+    /* border: 1px solid red; */
+
+    max-width: 40rem;
+    margin: 0 auto;
+    padding-bottom: 6rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 0 1rem var(--desc-color);
+}
 
 /* ===== HEADER =============== */
 header {
