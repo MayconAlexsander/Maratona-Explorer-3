@@ -1,0 +1,104 @@
+/* [Font] Roboto/Roboto Serif (400/700) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:opsz,wght@8..144,700&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* ===== GLOBAL =============== */
+:root {
+    font-size: 62.5%;
+
+    --bg-color: #FFEDD5;
+    --COFFEE-color: #995000;
+    --titles-bg-color: #FED7AA;
+    --texts-color: #2D2C2A;
+    --desc-color: rgba(0, 0, 0, 0.6);
+
+}
+
+body {
+    background-color: var(--bg-color);
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3, .price {
+    color: var(--texts-color);
+    font-family: 'Roboto Serif', serif;
+    text-transform: uppercase;
+}
+
+header, section {
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+
+
+/* ===== HEADER =============== */
+header {
+    padding: 3.2rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: .4rem;
+    font-size: 2.8rem;
+    line-height: 3.3rem;
+}
+
+header h1 span {    
+    color: var(--COFFEE-color);
+}
+
+header p {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+/* ===== SECTION =============== */
+section {
+    margin-bottom: 2.4rem;
+}
+
+section h2 {
+    background-color: var(--titles-bg-color);
+    margin-bottom: 2.4rem;
+    padding: .8rem 1.6rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+ul li {
+    display: flex;
+    margin-bottom: 1.6rem;
+}
+
+.details {
+    max-width: 24rem;
+}
+
+.details h3 {
+    margin-bottom: .8rem;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+}
+
+.details p {
+    color: var(--desc-color);
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+}
