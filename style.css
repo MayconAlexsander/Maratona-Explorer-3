@@ -14,11 +14,11 @@
 :root {
     font-size: 62.5%;
 
-    --bg-color: #FFEDD5;
-    --COFFEE-color: #995000;
-    --titles-bg-color: #FED7AA;
-    --texts-color: #2D2C2A;
-    --desc-color: rgba(0, 0, 0, 0.6);
+    --bg-color: #FFEDD5; /* default: #FFEDD5 */
+    --COFFEE-color: #995000; /* default: #995000 */
+    --titles-bg-color: #FED7AA; /* default: #FED7AA */
+    --texts-color: #2D2C2A; /* default: #2D2C2A */
+    --desc-color: rgba(0, 0, 0, 0.6); /* default: rgba(0, 0, 0, 0.6) */
 
 }
 
